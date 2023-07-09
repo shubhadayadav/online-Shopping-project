@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.view-align {
+  padding-bottom: 19em;
+  margin-bottom: 29em;
+  transform: translateY(20px);
+}
+
+.trash {
+  margin-left: 25px;
+  color: #ff0060;
+}
+
+.total {
+  padding-right: 35px;
+}
