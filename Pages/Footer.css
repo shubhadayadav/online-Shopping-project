@@ -1,54 +1,111 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .footer-style {
-    background-color: #191825;
-    color: white;
-    font-weight: 500;
-    margin-top: -19.8em;
-    position: absolute;
+  background-color: #191825;
+  color: white;
+  font-weight: 500;
+  margin-top: -19.8em;
+  position: absolute;
 }
 
 .row {
-    margin-left: 6.5em;
+  margin-left: 6.5em;
 }
 
 .nav-item {
-    color: white;
+  color: white;
 }
 
 .footer-email {
-    margin-left: 45em;
-    margin-top: -14.0em;
+  margin-left: 45em;
+  margin-top: -14em;
 }
 
 .section-style {
-    margin-left: 1em;
-    margin-top: -2px;
+  margin-left: 1em;
+  margin-top: -2px;
 }
 
 .getTouch-style {
-    margin-left: -1.7em;
-    margin-top: -3px;
+  margin-left: -1.7em;
+  margin-top: -3px;
 }
 
 .Subscribe {
-    background-color: #A555EC;
+  background-color: #a555ec;
 }
 
 .social-icon {
-    margin-left: 25.5em;
-    margin-top: -45px;
+  margin-left: 25.5em;
+  margin-top: -45px;
 }
 
 .bi-instagram {
-    margin-left: 1.3em;
-    color: #F15A59;
+  margin-left: 1.3em;
+  color: #f15a59;
 }
 
 .bi-twitter {
-    margin-left: 1.3em;
-    color: #6C9BCF;
+  margin-left: 1.3em;
+  color: #6c9bcf;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-email {
+    display: none;
+  }
+  .footer-style {
+    background-color: #191825;
+    display: block;
+  }
+  .section-style {
+    margin-left: 5em;
+    margin-top: -2px;
+  }
+  .getTouch-style {
+    margin-left: 1.7em;
+    margin-top: -3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-email {
+    display: none;
+  }
+  .section-style {
+    margin-left: 19.5em;
+    margin-top: -11.7em;
+    margin-bottom: 8px;
+  }
+  .getTouch-style {
+    margin-left: 1.7em;
+    margin-top: 8px;
+  }
+  .footer-style {
+    background-color: #191825;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-email {
+    display: none;
+    border-spacing: 0;
+  }
+  .section-style {
+    margin-left: 12em;
+    margin-top: -11.4em;
+    text-align: center;
+  }
+  .footer-style {
+    background-color: #191825;
+    display: block;
+  }
 }

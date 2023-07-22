@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./View.css";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../cartSlice/cartSlice";
+import { Link } from "react-scroll";
 
 const View = () => {
   const cartMenu = useSelector((state) => state.cart.cartItems);
@@ -36,7 +37,7 @@ const View = () => {
                       style={{ height: 64, aspectRatio: "1/1" }}
                     />
                   </div>
-                  <div className="fw-bold fs-6">{menu.rating.title}</div>
+                  <div className="fw-bold fs-6 title-style">{menu.title}</div>
                   <div className="fs-5 d-flex justify-content-evenly  ">
                     {menu.price}
                     <div
@@ -52,8 +53,16 @@ const View = () => {
             })}
           <li className="fw-bold list-group-item fs-4 d-flex justify-content-between total">
             Total:
-            <div>{Math.round(total)}</div>
+            <div className="mx-1">{Math.round(total)}.00</div>
           </li>
+          <div>
+            <Link
+              to="/checkout"
+              className="btn btn-danger checkout fs-6 p-2   mt-4"
+            >
+              CHECKOUT
+            </Link>
+          </div>
         </ul>
       </div>
     </>

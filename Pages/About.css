@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.about-align {
+  padding-bottom: 10em;
+  margin-bottom: -4em;
+  scroll-behavior: smooth;
+}
+
+.about-img {
+  background-image: url("../public/about-img.jpg");
+  width: 100vw;
+  height: 99vh;
+  margin-left: -0.9em;
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-header {
+  font-size: 51px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding-top: 2.5em;
+  transform: translateY(-660px);
+}
+
+.main-section {
+  margin: 0;
+  padding: 35px 100px;
+  background-color: #eeeeee;
+  transform: translateY(-230px);
+}
+
+.mini-content {
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-img {
+    width: 110%;
+  }
+  .about-header {
+    font-size: 51px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-top: 2.5em;
+    transform: translateY(-970px);
+  }
+  /*  */
+  .main-section {
+    text-align: center;
+    margin-left: -10px;
+    padding: 35px;
+    background-color: #eeeeee;
+    transform: translateY(-250px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-img {
+    width: 110%;
+  }
+  .about-header {
+    font-size: 51px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-top: 2.5em;
+    transform: translateY(-980px);
+  }
+  /*  */
+  .main-section {
+    text-align: center;
+    margin-left: -10px;
+    padding: 35px;
+    background-color: #eeeeee;
+    transform: translateY(-250px);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-img {
+    width: 150%;
+  }
+  .about-header {
+    font-size: 51px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-top: 2.5em;
+    transform: translateY(-980px);
+  }
+  /*  */
+  .main-section {
+    text-align: center;
+    margin-left: -5px;
+    padding: 35px;
+    background-color: #eeeeee;
+    transform: translateY(-250px);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-img {
+    width: 110%;
+  }
+  .about-header {
+    font-size: 51px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-top: 2.5em;
+    transform: translateY(-980px);
+  }
+  /*  */
+  .main-section {
+    text-align: center;
+    margin-left: -37px;
+    background-color: #eeeeee;
+    transform: translateY(-250px);
+    width: 120%;
+  }
+}

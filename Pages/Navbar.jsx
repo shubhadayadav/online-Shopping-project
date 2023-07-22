@@ -1,10 +1,10 @@
 import React from "react";
 import "../Pages/Navbar.css";
 import { useSelector } from "react-redux";
-import { handleClickScroll } from "./Scroll";
 import { Link } from "react-router-dom";
-import Dropdown from "./dropdown";
 import View from "./View";
+// import { shoppingcartSlice } from "./Scroll";
+// import Cart from "./Cart";
 // import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -13,11 +13,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg   sticky back">
+      <nav className="navbar navbar-expand-lg   sticky  back">
         <div className="container-fluid ">
           <Link to="/" className="">
             <img
-              className="   navbar-brand-style "
+              className=" navbar-nav  navbar-brand-style "
               src="https://t3.ftcdn.net/jpg/02/47/48/00/360_F_247480017_ST4hotATsrcErAja0VzdUsrrVBMIcE4u.jpg"
               alt=""
             />
@@ -49,14 +49,14 @@ const Navbar = () => {
                 {" "}
                 Features
               </Link>
-              <Link className="nav-link active " to="#">
+              <Link className="nav-link active " to="/about">
                 {" "}
                 About{" "}
               </Link>
-              <Link className="nav-link active " to="/contact">
+              {/* <Link className="nav-link active " to="/contact">
                 {" "}
                 Contact{" "}
-              </Link>
+              </Link> */}
 
               <form
                 className="d-flex form-style  "
@@ -83,15 +83,15 @@ const Navbar = () => {
 
               <div id="cartButton">
                 {/* <button type="button" className="btn btn-info btn-outline-none btn-style1 p-2   position-relative"> */}
-                <Link
-                  to="/cart"
-                  className="btn btn-primary btn-style-none btn-style1 "
-                >
-                  <i class="bi bi-basket"></i>
+                <Link to="/viewcart">
+                  <span className="btn btn-primary btn-style-none btn-style1 ">
+                    <i class="bi bi-basket"></i>
+                  </span>
+
+                  <span className=" top-0 start-100 translate-middle  badge rounded-pill bg-danger">
+                    {cartMenu.length}
+                  </span>
                 </Link>
-                <span className="position-absolute top-7 start-100 translate-middle badge rounded-pill bg-danger">
-                  {cartMenu.length}
-                </span>
               </div>
 
               {/* </button> */}
