@@ -53,10 +53,10 @@ const Navbar = () => {
                 {" "}
                 About{" "}
               </Link>
-              {/* <Link className="nav-link active " to="/contact">
+              <Link className="nav-link active " to="/contact">
                 {" "}
                 Contact{" "}
-              </Link> */}
+              </Link>
 
               <form
                 className="d-flex form-style  "
