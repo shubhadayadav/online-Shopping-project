@@ -2,7 +2,6 @@ import React from "react";
 import "./Shop.css";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { countPlus } from "../../Counter/counterslice";
 import axios from "axios";
 
 const Shop = () => {
@@ -60,10 +59,7 @@ const Shop = () => {
                             {" "}
                             Price:${products.price}
                           </p>
-                          <button
-                            className="btn btn-primary btn-shop   shadow-0 me-1 "
-                            onClick={() => dispatch(countPlus())}
-                          >
+                          <button className="btn btn-primary btn-shop   shadow-0 me-1 ">
                             Add to cart
                           </button>
                         </div>
